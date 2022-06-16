@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starberg</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#atencao").click(function () {
+                $("#atencao2").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div><button id="atencao">CLIQUE AQUI!</button></div>
+    <div id="atencao2">
+        <p>- ESSE PROJETO FOI DESENVOLVIDO POR GILDEMBERG, ALUNO DO 1° PERÍODO DO CURSO SISTEMA DA INFORMAÇÃO;</p><br>
+        <p>- O PROJETO FOI DESENVOLVIDO SOMENTE PARA FINS DE AVALIAÇÃO ACADÊMICA, E NÃO PARA FINS LUCRATIVOS;</p><br>
+        <p>- O CONTEÚDO PRESENTE NO PROJETO É TOTALMENTE FICTICIO, FAZENDO NÃO VALER AS INFORMAÇÕES CONTIDAS;</p><br>
+        <p>- TODAS AS IMAGENS FORAM RETIRADAS DO SITE "https://www.pexels.com/", LOGO, NÃO SÃO PROPRIEDADE DO DEV.</p>
+    </div>
+
+    <header id="cabecalho">
+        <div class="container">
+            <div id="box_starberg">
+                <img class="logo" src="imagens/logo.png" alt="">
+                <h1>STARBERG</h1>
+                <p>Olá essa página foi fundada para os amantes de café.</p>
+                <button><a href="#corpo">BEM VINDO</a></button>
+            </div>
+            <div id="borda_CE"></div>
+            <div id="borda_BD"></div>
+        </div>
+    </header>
+
+    <section id="corpo">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a class="underline" href="#cabecalho">HOME</a></li>
+                    <li><a class="underline" href="internas/nossa_loja.html">NOSSA LOJA</a></li>
+                    <li><a class="underline" href="internas/produtos.html">PRODUTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a class="underline" href="internas/localizacao.html">LOCALIZAÇÃO</a></li>
+                    <li><a class="underline" href="internas/fale_conosco.html">FALE CONOSCO</a></li>
+                    <li><a class="underline" href="internas/login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+            <div>
+                <div id="box_bem_vindo">
+                    <h2>BEM VINDO</h2>
+                    <p>Querido cliente e amigo, é com grande satisfação que te recebemos aqui. Não deixe de conferir
+                        cada página do nosso site e o mais importante, dos nossos produtos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

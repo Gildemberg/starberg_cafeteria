@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100&family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'SoDo Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50px 0px;
+    z-index: 2;
+}
+
+nav li {
+    display: inline-block;
+    padding: 12px;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 20px 0;
+    position: relative;
+}
+
+nav li a::after {
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: all 0.5s ease-out;
+}
+
+nav li a:hover::after{
+    transform: scale(1);
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10PX #000;
+}
+
+#atencao {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(62, 24, 16, 0.8);
+    box-shadow: 0 0 20px #000;
+    cursor: pointer;
+}
+ 
+#atencao:active {
+    text-shadow: 3px 3px 3px #000;
+}
+
+#atencao2 {
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    display: none;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(62, 24, 16, 0.8);
+    background-color: #fff;
+    box-shadow: 0 0 30px #000;
+}
+
+/* ======================================PÁGINA HOME====================================== */
+
+#cabecalho {
+    background-image: url(../imagens/background/pg_inicial1.jpg);
+    background-size: cover;
+    padding-top: 150px;
+    height: 100vh;
+}
+
+#cabecalho #box_starberg {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.67);
+    box-shadow: 0 0 10px #000;
+}
+
+#cabecalho #box_starberg h1 {
+    font-weight: 100;
+    font-size: 90px;
+    letter-spacing: 20px;
+}
+
+#cabecalho #box_starberg p {
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+#cabecalho button {
+    max-width: 200px;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    border: none;
+    letter-spacing: 5px;
+    background-color: rgba(192, 80, 32, 0.5);
+    box-shadow: 0 0 10PX #000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#cabecalho button a {
+    padding: 20px 32px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
+
+#cabecalho button:hover {
+    transform: scale(1.05);
+}
+
+#cabecalho #borda_CE{
+    position: absolute;
+    margin-top:-397px;
+    margin-left:210px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    max-width:100px;
+    width:100%;
+    height:100px;
+}
+#cabecalho #borda_BD{
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 890px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    max-width:100px;
+    width:100%;
+    height:100px;
+}
+
+#corpo {
+    background-image: url(../imagens/background/pg_inicial2.jpg);
+    background-size: cover;
+    padding-top: 6px;
+    height: 100vh;
+}
+
+#corpo #box_bem_vindo {
+    max-width: 430px;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    left: 800px;
+    color: #000;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#corpo #box_bem_vindo h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 80px;
+}
+
+#corpo #box_bem_vindo p {
+    text-align: justify;
+    font-size: 40px;
+}
+
+/* ======================================PÁGINA NOSSA LOJA====================================== */
+
+#pg_nossa_loja section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#pg_nossa_loja #esquerda_logo {
+    background: linear-gradient(to top, rgb(0,0,0),rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0), rgba(0,0,0,0)),rgb(90, 42, 29) ;
+    padding-top: 80px;
+    width: 100%;
+}
+
+#pg_nossa_loja #esquerda_logo .logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+#pg_nossa_loja #esquerda_logo .logo:hover {
+    transition: all 2s ease;
+    transform: rotate(360deg) scale(1.5);
+}
+
+#pg_nossa_loja #esquerda_logo span {
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 30vh;
+    font-size: 30px;
+}
+
+#pg_nossa_loja #direita_conteudo {
+    background-color: rgb(19, 19, 19);
+    padding-top: 80px;
+    width: 100%;
+    overflow-y: scroll;
+    color: #fff;
+    text-align: center;
+}
+
+#pg_nossa_loja #direita_conteudo #limitacao{
+    max-width: 700px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+#pg_nossa_loja #direita_conteudo::-webkit-scrollbar {
+    width: 8px;
+}
+
+#pg_nossa_loja #direita_conteudo::-webkit-scrollbar-track {
+    background: #000;
+}
+
+#pg_nossa_loja #direita_conteudo::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+#pg_nossa_loja #direita_conteudo .foto_loja {
+    width: 600px;
+    margin-top: 20px;
+}
+
+#pg_nossa_loja #direita_conteudo p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#pg_nossa_loja #direita_conteudo h2 {
+    margin-top: 30px;
+}
+
+#pg_nossa_loja #direita_conteudo #galeria {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    padding: 20px;
+}
+
+#pg_nossa_loja #direita_conteudo #galeria img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#pg_nossa_loja #direita_conteudo #galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* ======================================PÁGINA PRODUTOS======================================== */
+
+#pg_produtos {
+    background-image: url(../imagens/background/pg_produtos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#pg_produtos .produtos {
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    contain: content;
+    box-shadow: 0 0 10px #000;
+}
+
+#pg_produtos .produtos h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    font-family: 'Satisfy', cursive;
+
+}
+
+#pg_produtos .produtos ul {
+    display: block;
+    margin: 0 auto;
+}
+
+#pg_produtos .produtos li{
+    display: inline-block;
+    margin: 0 28px;
+}
+
+#pg_produtos .produtos li:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}  
+
+#pg_produtos .produtos img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+#pg_produtos .p1{
+    position: absolute;
+    animation-name: p1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    transform: translateX(100%);
+}
+
+@keyframes p1 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+#pg_produtos .produtos:hover .p1 {
+    animation-play-state: paused;
+    cursor: no-drop;
+}
+
+#pg_produtos .p2{
+    position: absolute;
+    animation-name: p2;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    transform: translateX(100%);
+    animation-iteration-count: infinite;
+}
+
+@keyframes p2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+#pg_produtos .produtos:hover .p2 {
+    animation-play-state: paused;
+    cursor: no-drop;
+}
+
+#pg_produtos .p3{
+    position: relative;
+    animation-name: p3;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    transform: translateX(100%);
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes p3 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+#pg_produtos .produtos:hover .p3 {
+    animation-play-state: paused;
+    cursor: no-drop;
+}
+
+/* ======================================PÁGINA LOCALIZAÇÃO===================================== */
+
+#pg_localizacao {
+    height: 100vh;
+}
+
+#pg_localizacao section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    height: 100vh;
+    top: 0px;
+    position: absolute;
+}
+
+#pg_localizacao #localizacoes {
+    display: inline-block;
+    overflow-y: scroll;
+    width: 100%;
+    background: linear-gradient(to top, rgb(0,0,0),rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0), rgba(0,0,0,0)),rgb(90, 42, 29) ;
+    color: #fff;
+    padding-top: 80px;
+}
+
+#localizacoes::-webkit-scrollbar {
+    width: 8px;
+}
+
+#localizacoes::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+#localizacoes::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+#pg_localizacao input {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(90, 42, 29) ;
+    color: #fff;
+}
+
+#pg_localizacao #lista li {
+    padding: 17px;
+}
+
+#pg_localizacao #lista a {
+    display: block;
+    max-width: 190px;
+    width: 100%;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+#pg_localizacao #lista li:hover {
+    background-color: rgba(252, 252, 252, 0.228);
+}
+
+#pg_localizacao iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ======================================PÁGINA FALE CONOSCO==================================== */
+
+#pg_fale_conosco {
+    background-image: url(../imagens/background/pg_fale_conosco.jpg);
+    background-size: cover;
+}
+
+#pg_fale_conosco #fale_conosco {
+    display: block;
+    margin: 50px auto;
+    background-color: rgba(245, 245, 245, 0.8);
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 750px;
+    border-radius: 0 20px;
+    padding: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#pg_fale_conosco #fale_conosco h2{
+    color: rgb(31, 62, 32);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#pg_fale_conosco #fale_conosco #email{
+    border-left: 1px solid #000;
+    padding-left: 60px;
+}
+
+
+#pg_fale_conosco #fale_conosco #tel h4{
+    color: rgb(31, 62, 32);
+    font-size: 18px;
+}
+
+#pg_fale_conosco #fale_conosco #tel p{
+    margin-top: 5px;
+}
+
+#pg_fale_conosco #fale_conosco #email .box{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.654);
+    background-color: rgba(255, 255, 255, 0.872);
+    outline: none;
+    margin: 7px 0;
+    resize: none;
+}
+
+#pg_fale_conosco #fale_conosco #email #box_inline{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3px;
+}
+
+#pg_fale_conosco #fale_conosco #email option {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#pg_fale_conosco #fale_conosco #email #enviar{
+    padding: 10px 70px;
+    border: none;
+    border-radius: 40px;
+    float: right;
+    background-color: rgba(31, 62, 32, 0.815);
+    color: #fff;
+    cursor: pointer;
+}
+
+#pg_fale_conosco #fale_conosco #email #enviar:active{
+    box-shadow: inset -2px -2px 2px #000;
+}
+
+/* ======================================PÁGINA LOGIN=========================================== */
+
+#pg_login {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)),  url(../imagens/background/pg_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#login {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+
+#login form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+#login h1{
+    text-align: center;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#login p{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+
+#login form .caixa {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    color: #000;
+    outline: none;
+}
+
+#login #elevacao1,
+#login #elevacao2 {
+    position: relative;
+    top: -50px;
+    left: 10px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#login #nome:valid ~ #elevacao1,
+#login #nome:focus ~ #elevacao1
+{
+    color: rgb(255, 255, 255);
+    top: -74px;
+    padding: 0 10px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0);
+    border-radius: 5px;
+}
+
+#login #senha:valid ~ #elevacao2,
+#login #senha:focus ~ #elevacao2
+{
+    color: rgb(255, 255, 255);
+    top: -74px;
+    padding: 0 10px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0);
+    border-radius: 5px;
+}
+
+#login #salvar {
+    margin-bottom: 20px;
+}
+
+#login form .esqueceu {
+    display: block;
+    color: rgb(104, 46, 15);
+    margin-top: 10px;
+}
+
+#login #entrar {
+    margin-top: 40px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    left: 310px;
+    box-shadow: 0 0 20px #000;
+    cursor: pointer;
+}
+
+#login #entrar:hover {
+    background-color: #000;
+}
+#login div {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 0;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+#login div h4 {
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+#login div p {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+}

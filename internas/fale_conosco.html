@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="pg_fale_conosco">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starberg - Fale Conosco</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="nossa_loja.html">NOSSA LOJA</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="#">FALE CONOSCO</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="fale_conosco">
+        <div id="tel">
+            <h2>Via telefone</h2>
+            <h4>(75) 9 0000-0000 | (75) 3281-0000</h4>
+            <p>De segunda a sexta-feira 09:00h às 17:00h</p>
+        </div>
+        <form id="email">
+            <h2>Via email</h2>
+
+            <label>Nome:</label>
+            <input class="box" type="text" placeholder="Digite seu nome..." required="required">
+
+            <div id="box_inline">
+                <label>Email: </label>
+                <label>Celular:</label>
+                <input class="box" type="email" placeholder="xxxxx@gmail.com" required="required">
+                <input class="box" type="tel" placeholder="(75) 9 8881-x330" required="required">
+            </div>
+
+            <label>Assunto: </label><br>
+            <select class="box" required>
+                <option value="">Selecione</option>
+                <option value="sug">Sugestões</option>
+                <option value="duv">Dúvidas</option>
+                <option value="out">Outras</option>
+            </select>
+
+            <label>Mensagem:</label>
+            <textarea class="box" cols="30" rows="10" maxlength="350" required="required"></textarea>
+
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </section>
+</body>
+
+</html>
